@@ -1,104 +1,35 @@
-import { useState } from "react";
-import { ChevronDown, HelpCircle } from "lucide-react";
-
-export default function FAQ() {
-  const [openIdx, setOpenIdx] = useState<number | null>(0);
-
-  const faqs = [
-    {
-      q: "Apa itu Jasa Optimasi Google Business Profile (GBP) oleh Digital Sinergi?",
-      a: "Ini adalah layanan intensif untuk menata kembali, mengoptimalkan, dan mengelola profil toko atau kantor Anda di Google Maps. Kami melakukan riset kueri lokal, melengkapi informasi data, menyelipkan skema kata kunci SEO, melakukan geotagging foto produk, mengelola ulasan bintang 5, hingga memposting promosi teratur agar bisnis Anda diprioritaskan Google masuk Halaman 1 (Local 3-Pack).",
-    },
-    {
-      q: "Apakah pengerjaan optimasi ini aman dan sesuai aturan Google?",
-      a: "Ya, 100% aman. Digital Sinergi hanya menggunakan metode pengerjaan White-Hat SEO murni sesuai ketentuan resmi Google Business Profile Guidelines. Kami menghindari cara-cara spam manipulatif yang bisa memicu risiko blacklist atau penangguhan (suspend). Integrity dan reputasi jangka panjang bisnis Anda adalah prioritas mutlak.",
-    },
-    {
-      q: "Bagaimana jika titik usaha saya belum ber-verifikasi atau terkena suspend?",
-      a: "Tentu bisa kami bantu! Kami memiliki tim technical support berpengalaman untuk mendampingi bisnis Anda melewati rintangan proses verifikasi (baik via pos, video, atau live chat Google), serta menganalisis akar masalah akun suspend guna mengajukan dokumen banding pemulihan (reinstatement) secara resmi ke Google Support.",
-    },
-    {
-      q: "Berapa lama waktu yang dibutuhkan sampai posisi ranking naik?",
-      a: "Semua pengisian data dasar, geotagging foto, dan riset kata kunci diselesaikan dalam waktu 3 hingga 5 hari kerja di awal. Perkembangan grafik kenaikan impression pencarian, permintaan rute, hingga panggilan telepon biasanya mulai terlihat signifikan pada dashboard GBP Insights Anda dalam kurun waktu 1 hingga 3 bulan pertama, bervariasi tergantung persaingan niche lokal di kota Anda.",
-    },
-    {
-      q: "Apakah ada jaminan atau Garansi Uang Kembali?",
-      a: "Kami memberikan Garansi Kenaikan Performa (Performance Growth Guarantee). Jika dalam waktu 30 hari pertama setelah semua pekerjaan kelola dan optimasi kami kerjakan tidak ada indikator pertumbuhan lalu lintas di panel laporan GBP Insights Anda, kami akan kembalikan dana optimasi Anda 100% secara utuh tanpa potongan sama sekali.",
-    },
-    {
-      q: "Bagaimana alur pengerjaan dan metodenya?",
-      a: "Alur kerjanya sangat sederhana: 1. Anda memilih paket dan melakukan pembayaran awal, 2. Anda mendelegasikan akses kelola profil GBP Anda (sebagai Pengelola / Owner), 3. Tim kami melakukan riset keyword & mulai mengeksekusi optimasi bertahap, 4. Kami menyetorkan laporan analisis & insight Maps detail setiap bulannya.",
-    },
-  ];
-
-  const handleToggle = (idx: number) => {
-    setOpenIdx((prev) => (prev === idx ? null : idx));
-  };
-
-  return (
-    <section id="faq" className="py-20 bg-white relative">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Header Text */}
-        <div className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 bg-blue-50 text-blue-600 font-bold text-xs px-3.5 py-1.5 rounded-full border border-blue-100 uppercase tracking-widest">
-            <HelpCircle className="w-4 h-4 text-blue-500" />
-            <span>Tanya Jawab Seputar GBP</span>
-          </div>
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-slate-900 leading-tight">
-            Pertanyaan yang Sering Diajukan (FAQ)
-          </h2>
-          <p className="text-sm text-slate-500 max-w-xl mx-auto">
-            Masih ragu mengenai Jasa Optimasi Google Business Profile (GBP) kami? Temukan jawaban lengkap seputar teknis kerja di bawah ini.
-          </p>
-        </div>
-
-        {/* Accordions */}
-        <div className="space-y-4">
-          {faqs.map((faq, idx) => {
-            const isOpen = openIdx === idx;
-            return (
-              <div
-                key={idx}
-                className={`border rounded-2xl transition-all duration-300 text-left overflow-hidden ${
-                  isOpen
-                    ? "bg-slate-50 border-blue-200 shadow-sm"
-                    : "bg-white border-slate-200 hover:border-slate-350"
-                }`}
-              >
-                {/* Trigger Button */}
-                <button
-                  onClick={() => handleToggle(idx)}
-                  className="w-full flex justify-between items-center px-6 py-5 cursor-pointer select-none text-slate-900 focus:outline-none"
-                >
-                  <span className="text-sm sm:text-base font-extrabold leading-tight">
-                    {faq.q}
-                  </span>
-                  <ChevronDown
-                    className={`w-4 text-gray-400 flex-shrink-0 transition-transform duration-300 ${
-                      isOpen ? "transform rotate-180 text-blue-600" : ""
-                    }`}
-                  />
-                </button>
-
-                {/* Answer Content */}
-                <div
-                  className={`transition-all duration-300 ease-in-out ${
-                    isOpen ? "max-h-[300px] border-t border-slate-100" : "max-h-0 pointer-events-none"
-                  } overflow-hidden`}
-                >
-                  <div className="p-6 text-xs sm:text-sm text-slate-500 leading-relaxed font-normal">
-                    {faq.a}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-
-
-      </div>
-    </section>
-  );
+{
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "mkdir -p dist && cp index.html dist/index.html && mkdir -p dist/src/assets/images && cp -r src/assets/images/* dist/src/assets/images/ 2>/dev/null || true",
+    "preview": "vite preview",
+    "clean": "rm -rf dist server.js",
+    "lint": "echo 'No linting required for static html distribution'"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "lucide-react": "^0.546.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "vite": "^6.2.3",
+    "express": "^4.21.2",
+    "dotenv": "^17.2.3",
+    "motion": "^12.23.24"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.0",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3",
+    "@types/express": "^4.17.21"
+  }
 }
