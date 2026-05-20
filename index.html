@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasa Optimasi Google Business Profile - Digital Sinergi</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- CSS Animation Helper -->
+    <style>
+      @keyframes bounceSubtle {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
+      .animate-bounce-subtle {
+        animation: bounceSubtle 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased overflow-x-hidden selection:bg-blue-600 selection:text-white">
+
+    <!-- Floating Sticky Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#home" class="flex items-center gap-2 group">
+            <div class="relative w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform">
+              <span class="text-white font-extrabold text-xl font-mono">D</span>
+              <div class="absolute -bottom-1 -right-1 bg-amber-500 text-[10px] text-white font-bold px-1 rounded-md border border-white">
+                GBP
+              </div>
+            </div>
+            <div class="flex flex-col text-left">
+              <span class="text-xl font-extrabold text-slate-900 leading-none tracking-tight group-hover:text-blue-600 transition-colors uppercase">
+                Digital Sinergi
+              </span>
+              <span class="text-[10px] font-semibold text-gray-500 tracking-widest uppercase">
+                Digital Business Partner
+              </span>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center gap-6">
+            <div class="flex items-center gap-1 bg-gray-50 p-1.5 rounded-full border border-gray-100">
+              <a href="#home" class="px-4 py-2 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white transition-all">Home</a>
+              <a href="#why-us" class="px-4 py-2 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white transition-all">Mengapa Kami</a>
+              <a href="#services" class="px-4 py-2 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white transition-all">Jasa Kami</a>
+              <a href="#visibility-audit" class="px-4 py-2 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white transition-all">Cek Audit</a>
+              <a href="#faq" class="px-4 py-2 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white transition-all">FAQ</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-lg shadow-blue-500/20 hover:scale-[1.02] active:scale-95 transition-all">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>Audit Visibility Gratis</span>
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="lg:hidden flex items-center">
+            <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-700 hover:bg-gray-100 transition-colors cursor-pointer" aria-label="Toggle Menu">
+              <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+              <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu drawer -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl overflow-hidden transition-all duration-300 max-h-0">
+        <div class="px-4 pt-4 pb-6 space-y-2">
+          <a href="#home" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-gray-50 hover:text-blue-600 transition-all">Home</a>
+          <a href="#why-us" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-gray-50 hover:text-blue-600 transition-all">Mengapa Kami</a>
+          <a href="#services" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-gray-50 hover:text-blue-600 transition-all">Jasa Kami</a>
+          <a href="#visibility-audit" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-gray-50 hover:text-blue-600 transition-all">Cek Audit</a>
+          <a href="#faq" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-gray-50 hover:text-blue-600 transition-all">FAQ</a>
+          <div class="pt-4 border-t border-gray-100">
+            <a href="#contact" class="mobile-nav-link w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>Audit Visibility Gratis</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-24 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-gradient-to-b from-blue-50/70 via-indigo-50/20 to-white">
+      <!-- Decorative Blur Spheres -->
+      <div class="absolute top-1/4 left-0 -translate-x-1/2 w-72 h-72 md:w-96 md:h-96 rounded-full bg-blue-400/10 blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-10 right-0 translate-x-1/3 w-80 h-80 md:w-[450px] md:h-[450px] rounded-full bg-indigo-300/15 blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Text Left Column -->
+          <div class="lg:col-span-7 flex flex-col space-y-6 text-left">
+            <!-- Tag Badge -->
+            <div class="inline-flex items-center gap-1.5 self-start px-3 py-1 bg-blue-100/95 text-blue-700 rounded-full text-xs font-bold border border-blue-200/50 shadow-sm">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              <span>GBP SEO Partner No. 1 di Indonesia</span>
+            </div>
+
+            <!-- Title display -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-extrabold text-slate-900 tracking-tight leading-tight">
+              Bingung Kenapa Bisnis Anda Sepi? <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700">Kami Tunjukkan Alasannya.</span>
+            </h1>
+
+            <!-- Description -->
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-2xl">
+              86% pelanggan mencari bisnis lewat Google Maps, kalau bisnis Anda gak muncul di sana, pelanggan pun gak akan datang.
+            </p>
+
+            <!-- Scalable SVG Illustration -->
+            <div class="relative w-full max-w-xl rounded-2xl border border-slate-150 bg-white p-4 sm:p-6 shadow-sm overflow-hidden">
+              <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
+                <div class="flex items-center gap-2">
+                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-500" style="animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;"></div>
+                  <span class="text-xs font-bold text-slate-800">Skema Akurasi Kenaikan Ranking & Kunjungan Toko</span>
+                </div>
+                <div class="flex items-center gap-3 text-[10px] sm:text-xs">
+                  <span class="flex items-center gap-1 font-semibold text-rose-500">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> Sebelum
+                  </span>
+                  <span class="flex items-center gap-1 font-semibold text-emerald-600">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Sesudah Optimasi GBP
+                  </span>
+                </div>
+              </div>
+
+              <!-- Responsive SVG wrapper -->
+              <div class="w-full relative aspect-[1.8/1] flex items-center justify-center bg-slate-50/50 rounded-xl p-2 border border-slate-100">
+                <svg class="w-full h-full text-slate-350" viewBox="0 0 540 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Grid -->
+                  <g class="stroke-slate-200/60 stroke-[1]" stroke-dasharray="3 3">
+                    <line x1="50" y1="50" x2="490" y2="50" />
+                    <line x1="50" y1="100" x2="490" y2="100" />
+                    <line x1="50" y1="150" x2="490" y2="150" />
+                    <line x1="50" y1="200" x2="490" y2="200" />
+                    <line x1="50" y1="250" x2="490" y2="250" />
+                  </g>
+                  <defs>
+                    <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.25" />
+                      <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+                    </linearGradient>
+                    <linearGradient id="gbpGlow" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#2563eb" />
+                      <stop offset="100%" stopColor="#1d4ed8" />
+                    </linearGradient>
+                  </defs>
+                  
+                  <path d="M 50,240 Q 160,230 270,170 T 490,75 L 490,250 L 50,250 Z" fill="url(#chartGradient)" />
+                  <path d="M 50,240 Q 160,242 270,245" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4" class="opacity-70" />
+                  <path d="M 50,240 Q 160,230 270,170 T 490,75" stroke="#2563eb" stroke-width="4" stroke-linecap="round" />
+                  <path d="M 480,72 L 494,74 L 488,86" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+                  <!-- Sebelum Pin -->
+                  <g>
+                    <circle cx="50" cy="240" r="14" fill="#fee2e2" stroke="#f43f5e" stroke-width="2" />
+                    <path d="M50,233 c-3,0 -5,2 -5,5 c0,4 5,9 5,9 s5,-5 5,-9 c0,-3 -2,-5 -5,-5 z" fill="#ef4444" />
+                    <circle cx="50" cy="238" r="1.5" fill="white" />
+                    <rect x="15" y="262" width="70" height="20" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+                    <text x="50" y="274" text-anchor="middle" fill="#ef4444" font-size="7" font-weight="extrabold" font-family="sans-serif">Rank #18 😥</text>
+                  </g>
+
+                  <!-- Proses Pin -->
+                  <g>
+                    <circle cx="270" cy="170" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" />
+                    <path d="M270,161 c-3,0 -5,2 -5,5 c0,4 5,9 5,9 s5,-5 5,-9 c0,-3 -2,-5 -5,-5 z" fill="#3b82f6" />
+                    <circle cx="270" cy="166" r="1.5" fill="white" />
+                    <rect x="220" y="110" width="100" height="26" rx="4" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1" />
+                    <text x="270" y="121" text-anchor="middle" fill="#0369a1" font-size="7.5" font-weight="extrabold" font-family="sans-serif">Optimasi GBP 📈</text>
+                    <text x="270" y="131" text-anchor="middle" fill="#555" font-size="6.5" font-weight="semibold" font-family="sans-serif">Geotagging & Review</text>
+                    <line x1="270" y1="136" x2="270" y2="154" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="2 2" />
+                  </g>
+
+                  <!-- Rank 1 Pin -->
+                  <g>
+                    <circle cx="490" cy="75" r="23" fill="#dcfce7" stroke="#10b981" stroke-width="2" />
+                    <circle cx="490" cy="75" r="18" fill="url(#gbpGlow)" />
+                    <path d="M490,67 L491.5,71.5 L496,71.5 L492.5,74 L494,78.5 L490,76 L486,78.5 L487.5,74 L484,71.5 L488.5,71.5 Z" fill="#f59e0b" />
+                    <path d="M482,53 L485,58 L490,55 L495,58 L498,53 L495,61 L485,61 Z" fill="#fbbf24" stroke="#d97706" stroke-width="1" />
+                    
+                    <rect x="330" y="130" width="145" height="100" rx="10" fill="#ffffff" stroke="#10b981" stroke-width="2" />
+                    <rect x="330" y="130" width="145" height="22" rx="10" fill="#10b981" />
+                    <rect x="330" y="142" width="145" height="10" fill="#10b981" />
+                    <text x="402.5" y="144" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="extrabold" font-family="sans-serif">PIN #1 DI GOOGLE MAPS</text>
+
+                    <circle cx="345" cy="168" r="4" fill="#ecfdf5" stroke="#10b981" stroke-width="1" />
+                    <text x="356" y="171" fill="#1e293b" font-size="7.5" font-weight="bold" font-family="sans-serif">Telepon Naik +340%</text>
+                    
+                    <circle cx="345" cy="184" r="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1" />
+                    <text x="356" y="187" fill="#1e293b" font-size="7.5" font-weight="bold" font-family="sans-serif">Ulasan Bintang 5 Alami</text>
+                    
+                    <circle cx="345" cy="200" r="4" fill="#fffbeb" stroke="#f59e0b" stroke-width="1" />
+                    <text x="356" y="203" fill="#1e293b" font-size="7.5" font-weight="bold" font-family="sans-serif">Omset Bisnis Naik 2.5x</text>
+
+                    <text x="356" y="218" fill="#10b981" font-size="8" font-weight="extrabold" font-family="sans-serif">★★★★★ 5.0 (180+ Review)</text>
+                    <line x1="475" y1="78" x2="430" y2="130" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 3" />
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Informative Text -->
+              <div class="mt-4 bg-slate-50 border border-slate-100 rounded-xl p-3 flex items-start gap-2.5 text-left">
+                <span class="text-sm">🚀</span>
+                <p class="text-[11px] sm:text-xs font-semibold text-slate-600 leading-normal">
+                  <strong class="text-slate-800">Prinsip Kerja SEO Peta Google:</strong> Meningkatkan posisi titik koordinat bisnis Anda agar tercantum di <span class="text-blue-600 font-extrabold">"Local 3-Pack" (Peringkat 3 Besar Google Maps)</span> saat calon pembeli mencari produk/layanan Anda secara langsung.
+                </p>
+              </div>
+            </div>
+
+            <!-- Primary CTAs -->
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <a href="#contact" class="group flex flex-col items-center justify-center gap-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 hover:scale-[1.02] active:scale-95 text-white px-8 py-4 rounded-xl shadow-xl shadow-blue-500/20 transition-all cursor-pointer animate-bounce-subtle w-full sm:w-auto">
+                <div class="flex items-center gap-2">
+                  <span class="font-extrabold text-sm sm:text-base">Cek Peringkat Bisnis Saya</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+                <span class="text-[10px] sm:text-xs font-semibold text-blue-100">(Gratis cuma butuh 5 menit saja)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Mock Right Column -->
+          <div class="lg:col-span-5 relative">
+            <!-- Toggle switches -->
+            <div class="flex bg-gray-100 p-1.5 rounded-full border border-gray-200 max-w-sm mx-auto mb-4 relative z-20 shadow-inner">
+              <button onclick="setToggleState('before')" id="btn-toggle-before" class="flex-1 py-1.5 px-3 rounded-full text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900">
+                Sebelum Optimasi 😥
+              </button>
+              <button onclick="setToggleState('after')" id="btn-toggle-after" class="flex-1 py-1.5 px-3 rounded-full text-xs font-bold transition-all cursor-pointer bg-emerald-600 text-white shadow-md shadow-emerald-600/10">
+                Sesudah Optimasi 🔥
+              </button>
+            </div>
+
+            <!-- Phone Frame wrapper -->
+            <div class="relative mx-auto max-w-[310px] bg-slate-950 rounded-[40px] p-3 border-4 border-slate-900 shadow-2xl shadow-slate-900/40">
+              <!-- Camera Notch -->
+              <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-900 rounded-b-2xl z-30 flex items-center justify-center">
+                <div class="w-12 h-1 bg-slate-800 rounded-full"></div>
+                <div class="w-2 h-2 bg-slate-800 rounded-full ml-2"></div>
+              </div>
+
+              <!-- Smartphone Screen -->
+              <div class="bg-white rounded-[32px] overflow-hidden border border-slate-200 flex flex-col min-h-[500px] text-slate-800 relative select-none">
+                <!-- Google Maps Search -->
+                <div class="bg-blue-600 pt-7 pb-3 px-3 relative text-white">
+                  <div class="flex items-center gap-1.5 bg-white/10 p-2.5 rounded-xl border border-white/15">
+                    <i data-lucide="search" class="w-3.5 h-3.5 text-blue-100"></i>
+                    <div class="text-xs text-blue-100 font-semibold truncate flex-1">
+                      Klinik Pratama Terdekat
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Panel Body -->
+                <div id="phone-screen-content" class="p-3 flex-1 flex flex-col space-y-3 bg-slate-50 overflow-y-auto text-left">
+                  <!-- Static Location Header inside app -->
+                  <div class="bg-white rounded-2xl p-2.5 shadow-sm border border-slate-100 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-[10px] text-gray-500 uppercase tracking-widest font-black">Google Maps View</span>
+                        <span class="text-xs font-extrabold text-slate-950">Bandung & Jakarta</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Dynamic Before view -->
+                  <div id="phone-view-before" class="hidden bg-white rounded-2xl p-3 shadow-md border border-red-100 flex flex-col space-y-3 transition-all duration-300">
+                    <div class="flex justify-between items-start">
+                      <div>
+                        <h3 class="text-xs font-extrabold text-slate-900 leading-tight">Nama Bisnis (Belum Optimasi)</h3>
+                        <span class="text-[9px] font-semibold text-rose-500 bg-rose-50 px-1.5 py-0.5 rounded border border-rose-100 inline-block mt-1">
+                          Lokal Ranking: #18
+                        </span>
+                      </div>
+                      <span class="text-[10px] text-gray-400 font-bold">1.2 km</span>
+                    </div>
+                    <div class="flex items-center gap-1 text-slate-400">
+                      <span class="text-xs font-black text-slate-600">3.2</span>
+                      <div class="flex text-amber-300">
+                        <i data-lucide="star" class="w-2.5 h-2.5 fill-amber-300 text-amber-300"></i>
+                        <i data-lucide="star" class="w-2.5 h-2.5 fill-amber-300 text-amber-300"></i>
+                        <i data-lucide="star" class="w-2.5 h-2.5 fill-amber-300 text-amber-300"></i>
+                        <i data-lucide="star" class="w-2.5 h-2.5 text-gray-300"></i>
+                        <i data-lucide="star" class="w-2.5 h-2.5 text-gray-300"></i>
+                      </div>
+                      <span class="text-[9px] font-semibold text-gray-400">(4 ulasan)</span>
+                    </div>
+                    <p class="text-[10px] text-slate-500 italic font-medium leading-relaxed">
+                      "Informasi kosong, website kosong, jam buka berantakan, foto minim..."
+                    </p>
+                    <div class="bg-slate-50 rounded-xl p-2.5 border border-slate-100 flex justify-between items-center text-[10px]">
+                      <span class="font-semibold text-slate-600">Pencarian Bulanan</span>
+                      <span class="font-extrabold text-rose-600">-24% Menurun</span>
+                    </div>
+                  </div>
+
+                  <!-- Dynamic After view -->
+                  <div id="phone-view-after" class="bg-white rounded-2xl p-3 shadow-md border border-emerald-100 flex flex-col space-y-3 transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-white font-extrabold text-[8px] px-2 py-0.5 rounded-bl-xl uppercase tracking-widest shadow-sm">
+                      Terverifikasi & Optimal
+                    </div>
+                    <div class="flex justify-between items-start">
+                      <div>
+                        <h3 class="text-xs font-extrabold text-slate-950 leading-tight font-sans">Klinik Pratama & Apotek Sehat</h3>
+                        <span class="text-[9px] font-semibold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-100 inline-block mt-1">
+                          Lokal Ranking: #1 (Local 3-Pack)
+                        </span>
+                      </div>
+                      <span class="text-[10px] text-blue-600 font-bold underline">Rute</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <span class="text-xs font-black text-slate-900">4.9</span>
+                      <div class="flex text-amber-400">
+                        <i data-lucide="star" class="w-2.5 h-2.5 fill-amber-400 text-amber-400"></i>
+                        <i data-lucide="star" class="w-2.5 h-2.5 fill-amber-400 text-amber-400"></i>
+                        <i data-lucide="star" class="w-2.5 h-2.5 fill-amber-400 text-amber-400"></i>
+                        <i data-lucide="star" class="w-2.5 h-2.5 fill-amber-400 text-amber-400"></i>
+                        <i data-lucide="star" class="w-2.5 h-2.5 fill-amber-400 text-amber-400"></i>
+                      </div>
+                      <span class="text-[9px] font-bold text-slate-600">(180+ ulasan)</span>
+                    </div>
+                    <div class="text-[10px] text-slate-600 font-semibold flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-green-500 inline-block" style="animation: pulse 1.5s infinite;"></span>
+                      <span>Buka - Tutup jam 21.00 WIB</span>
+                    </div>
+                    <p class="text-[10px] text-slate-500">
+                      <strong class="text-slate-800">✅ Fitur Lengkap:</strong> Deskripsi tertarget SEO, posting tawaran mingguan, geotagging foto produk & navigasi Maps presisi.
+                    </p>
+                    <div class="bg-emerald-50 rounded-xl p-2 border border-emerald-100 flex flex-col space-y-1">
+                      <div class="flex justify-between items-center text-[9px] text-slate-600">
+                        <span class="font-bold flex items-center gap-1">
+                          <i data-lucide="trending-up" class="w-3 h-3 text-emerald-600"></i>
+                          Interaksi Melompat
+                        </span>
+                        <span class="font-extrabold text-emerald-600">+340% (Melejit)</span>
+                      </div>
+                      <div class="w-full bg-emerald-250/50 h-1 rounded-full overflow-hidden">
+                        <div class="bg-emerald-500 h-full w-[85%] rounded-full"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Small maps pin simulation -->
+                  <div class="bg-white rounded-2xl p-2 shadow-sm border border-slate-100 text-[10px] text-slate-500">
+                    <span class="font-black text-slate-700 block mb-1">Peta Area Terdekat</span>
+                    <div class="w-full h-20 rounded-lg bg-blue-50/50 flex items-center justify-center border border-blue-100 relative overflow-hidden">
+                      <div class="absolute inset-0 grid grid-cols-4 grid-rows-2 opacity-10 border-t border-l border-blue-200">
+                        <div class="border-r border-b border-blue-250"></div>
+                        <div class="border-r border-b border-blue-250"></div>
+                        <div class="border-r border-b border-blue-250"></div>
+                        <div class="border-r border-b border-blue-250"></div>
+                      </div>
+                      <!-- Map Pin dynamic render -->
+                      <div id="map-pin-before" class="hidden absolute bottom-3 left-10 flex flex-col items-center">
+                        <div class="w-3.5 h-3.5 rounded-full bg-rose-500 animate-pulse border border-white"></div>
+                        <span class="text-[7px] text-rose-700 font-semibold">Bisnis Anda (#18)</span>
+                      </div>
+                      <div id="map-pin-after" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                        <div class="w-6 h-6 rounded-full bg-blue-100 border border-blue-600 flex items-center justify-center" style="animation: bounce 1.5s infinite;">
+                          <i data-lucide="star" class="w-3.5 h-3.5 text-amber-500 fill-amber-500"></i>
+                        </div>
+                        <span class="text-[7px] text-blue-700 font-extrabold bg-blue-50 px-1 rounded shadow">Peta No #1!</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Footer mock buttons inside phone -->
+                <div class="bg-white border-t border-slate-100 py-3 px-4 flex justify-around text-slate-500">
+                  <div class="flex flex-col items-center gap-1 cursor-pointer">
+                    <i data-lucide="smartphone" class="w-4 h-4"></i>
+                    <span class="text-[9px] font-bold">Telepon</span>
+                  </div>
+                  <div class="flex flex-col items-center gap-1 cursor-pointer">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                    <span class="text-[9px] font-bold">Rute</span>
+                  </div>
+                  <div class="flex flex-col items-center gap-1 cursor-pointer">
+                    <i data-lucide="search" class="w-4 h-4"></i>
+                    <span class="text-[9px] font-bold">Cari</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Glowing Badge floating -->
+            <div class="absolute -bottom-4 -left-2 bg-amber-500 text-white p-3 rounded-2xl shadow-lg border border-amber-400 transform -rotate-3 hover:rotate-0 transition-transform hidden sm:flex items-center gap-2">
+              <i data-lucide="trending-up" class="w-5 h-5"></i>
+              <div class="flex flex-col text-left">
+                <span class="text-xs font-black">Omset Naik 2.5x</span>
+                <span class="text-[9px] text-amber-100 font-semibold leading-none">setelah profil optimal</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Trust Bar -->
+    <div class="bg-slate-900 text-white/50 py-6 border-y border-slate-800 relative z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-center justify-around gap-6 text-[10px] sm:text-xs font-black uppercase tracking-widest text-center">
+          <span class="hover:text-white transition-colors">🔥 Google Maps SEO Partner</span>
+          <span class="text-slate-800 hidden sm:inline">•</span>
+          <span class="hover:text-white transition-colors">🗺️ 100% Sesuai Pedoman GBP</span>
+          <span class="text-slate-800 hidden sm:inline">•</span>
+          <span class="hover:text-white transition-colors">🚀 Garansi Kenaikan Performa</span>
+          <span class="text-slate-800 hidden sm:inline">•</span>
+          <span class="hover:text-white transition-colors">✨ Ulasan Bintang 5 Alami</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Problems Section -->
+    <section id="why-us" class="py-20 bg-slate-50 border-y border-slate-100 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-xs font-black tracking-widest text-[#EA4335] uppercase bg-red-50 inline-block px-3 py-1 rounded-full border border-red-100">
+            Analisis Visibilitas Lokal
+          </h2>
+          <h3 class="text-3xl font-extrabold text-slate-900 leading-tight">
+            Kalau Bisnis Anda Masih Sepi, Mungkin Salah Satu Masalah Ini yang Terjadi:
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Banyak pemilik bisnis telah membuat promo, bahkan memberi diskon besar-besaran. Tapi hasilnya tetap sama. Masalahnya bukan di tawaran Anda, melainkan seberapa mudah bisnis Anda ditemukan di Google.
+          </p>
+        </div>
+
+        <!-- Problems Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+          <!-- Problem 1 -->
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/60 shadow-sm flex gap-4 hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-[#EA4335] group-hover:bg-red-500 group-hover:text-white transition-all">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </div>
+            <div class="flex flex-col space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Sudah di Lokasi Strategis, Tapi Tetap Sepi?</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Karena pelanggan gak tahu nama dan jenis bisnis Anda berada persis di sana.</p>
+            </div>
+          </div>
+          <!-- Problem 2 -->
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/60 shadow-sm flex gap-4 hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-[#EA4335] group-hover:bg-red-500 group-hover:text-white transition-all">
+              <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+            </div>
+            <div class="flex flex-col space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Sudah Bikin Promo & Diskon, Tapi Gak Ngaruh?</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Promosi secanggih apa pun tidak efisien jika profil peta Anda bahkan tidak terindeks oleh mesin Google.</p>
+            </div>
+          </div>
+          <!-- Problem 3 -->
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/60 shadow-sm flex gap-4 hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-[#EA4335] group-hover:bg-red-500 group-hover:text-white transition-all">
+              <i data-lucide="shield-alert" class="w-6 h-6"></i>
+            </div>
+            <div class="flex flex-col space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Sudah Pasang Iklan, Tapi Gak Ada Hasil?</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Iklan mendatangkan klik sesaat, tapi reputasi Google Business Profile yang minim membuat calon konsumen lari ke kompetitor.</p>
+            </div>
+          </div>
+          <!-- Problem 4 -->
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/60 shadow-sm flex gap-4 hover:shadow-md transition-shadow group">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-[#EA4335] group-hover:bg-red-500 group-hover:text-white transition-all">
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <div class="flex flex-col space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Kompetitor Selalu Lebih Ramai?</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Bukan karena pelayanan mereka lebih baik, melainkan profil Google Maps mereka menduduki ranking teratas di HP pelanggan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick warning card -->
+        <div class="mt-12 bg-amber-50 rounded-2xl p-5 border border-amber-200 text-amber-900 text-xs sm:text-sm font-semibold max-w-4xl mx-auto">
+          💡 <span class="font-extrabold">Fakta Bisnis Lokal:</span> 86% Orang menggunakan Google Maps sebelum berkunjung secara fisik. Jika lokasi Anda tidak bertengger di posisi <span class="text-indigo-600 underline">Local 3-Pack (Ranking 1-3)</span>, Anda kehilangan hampir seluruh porsi pasar tersebut!
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Solutions Section -->
+    <section id="services" class="py-20 relative bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-xs font-black tracking-widest text-blue-600 uppercase bg-blue-50 inline-block px-3 py-1 rounded-full border border-blue-100">
+            Solusi Terbaik Kami
+          </h2>
+          <p class="text-3xl font-extrabold text-slate-900 leading-tight">
+            Layanan Optimasi Menyeluruh oleh Tim Digital Sinergi
+          </p>
+          <p class="text-sm text-slate-500">
+            Kami mengkonsolidasikan seluruh parameter teknis akun GBP Anda agar mendominasi halaman utama Google.
+          </p>
+        </div>
+
+        <!-- Solutions Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+          <!-- Solution 1 -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-150 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+              <i data-lucide="search" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Riset Keyword Lokal & Kategori Akurat</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Menanamkan kata kunci bervolume tinggi di area sekitar bisnis Anda ke dalam judul, subkategori, serta deskripsi GBP.</p>
+            </div>
+          </div>
+          <!-- Solution 2 -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-150 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+              <i data-lucide="settings" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Pengaturan Detail Profil (Complete Audit)</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Merapikan detail esensial seperti jam kerja, wilayah cakupan toko, kontak telepon aktif, link website, dan ulasan profil.</p>
+            </div>
+          </div>
+          <!-- Solution 3 -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-150 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+              <i data-lucide="compass" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Geotagging Metadata Foto Presisi</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Menyisipkan koordinat lintang/bujur (Latitude & Longitude) yang tepat sebelum mengupload foto ke Maps guna mendongkrak relevansi spasial Google.</p>
+            </div>
+          </div>
+          <!-- Solution 4 -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-150 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+              <i data-lucide="file-edit" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Pengelolaan Kiriman Posting Rutin</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Mengunggah update berskala mingguan tentang promo baru, event toko, atau produk rilis sehingga Google merekomendasikan Anda aktif.</p>
+            </div>
+          </div>
+          <!-- Solution 5 -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-150 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+              <i data-lucide="star" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Optimasi Q&A & Kurasi Ulasan Pelanggan</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Menyusun forum tanya-jawab strategis bersandarkan search-intent dan mendampingi Anda menjaring ulasan positif dari pembeli asli.</p>
+            </div>
+          </div>
+          <!-- Solution 6 -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-150 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+              <i data-lucide="line-chart" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-base font-bold text-slate-900">Analitik Laporan & Dashboard Bulanan</h4>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">Menyajikan rekaman performa orsinil tentang impresi, rute peta yang diminta, peningkatan panggilan keluar, dan grafik visibilitas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust stamp -->
+        <div class="mt-16 text-center">
+          <div class="inline-flex flex-wrap items-center justify-center gap-2 px-6 py-3 rounded-full bg-slate-100 border border-slate-200">
+            <i data-lucide="award" class="w-5 h-5 text-amber-500 fill-amber-500 animate-pulse"></i>
+            <span class="text-xs font-bold text-slate-800">
+              Optimasi dilakukan secara alami (White-Hat SEO) sesuai Kebijakan Google Maps terbaru.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE & AFTER Comparison Area -->
+    <section id="visibility-audit" class="py-20 bg-slate-50 relative overflow-hidden">
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -z-10"></div>
+      <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-xs font-black tracking-widest text-blue-600 uppercase bg-blue-50 inline-block px-3 py-1 rounded-full border border-blue-100">
+            Perbandingan Hasil
+          </h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+            Sebelum & Sesudah Cek Visibility Audit
+          </h3>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            Ketahui transformasi besar pada bisnis Anda setelah menerapkan panduan optimasi komprehensif kami.
+          </p>
+        </div>
+
+        <!-- Comparison Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left">
+          <!-- BEFORE Box -->
+          <div class="relative bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
+            <div class="absolute top-0 left-0 right-0 h-1.5 bg-red-500 rounded-t-3xl"></div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-red-50 flex items-center justify-center text-red-500 border border-red-100 shadow-sm">
+                <i data-lucide="help-circle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] font-bold text-red-500 uppercase tracking-wider block">Fase Masalah</span>
+                <h4 class="text-xl font-extrabold text-slate-900">BEFORE Visibility Audit</h4>
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 mb-6 border-b border-slate-100 pb-4 leading-relaxed font-semibold">
+              Kondisi umum profil yang dibiarkan tanpa manajemen taktis sehingga tenggelam di pencarian terdekat.
+            </p>
+            <ul class="space-y-4 text-slate-600 text-sm font-medium">
+              <li class="flex items-start gap-3">
+                <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5"></i>
+                <span>Tidak tahu kenapa toko fisik sepi/minim pengunjung</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5"></i>
+                <span>Promosi berjalan sia-sia karena tidak ada yang menemukan lokasi Anda</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5"></i>
+                <span>Kompetitor meraup seluruh telepon, rute, dan ulasan bintang-5</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="x" class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5"></i>
+                <span>Biaya promosi dan energi pemasaran terkuras habis</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- AFTER Box -->
+          <div class="relative bg-gradient-to-b from-blue-50/70 to-indigo-50/20 border border-blue-150 rounded-3xl p-8 shadow-md hover:shadow-lg transition-all">
+            <div class="absolute top-0 left-0 right-0 h-1.5 bg-blue-600 rounded-t-3xl"></div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-blue-100/80 flex items-center justify-center text-blue-600 border border-blue-200/50 shadow-sm">
+                <i data-lucide="check-circle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-wider block">Fase Solusi</span>
+                <h4 class="text-xl font-extrabold text-slate-900">AFTER Visibility Audit</h4>
+              </div>
+            </div>
+            <p class="text-xs text-blue-800/70 mb-6 border-b border-blue-100 pb-4 leading-relaxed font-bold">
+              Lompatan hasil riil setelah titik lokasi diperbaiki dan dipertahankan di Local 3-Pack.
+            </p>
+            <ul class="space-y-4 text-slate-800 text-sm font-semibold">
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                <span>Memahami posisi ranking riil bisnis dan cara merebutnya</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                <span>Toko ditemukan secara konstan saat pembeli mencari kata kunci terkait</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                <span>Mendapatkan ulasan positif organik bintang-5 dari pelanggan nyata</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                <span>Langkah dan taktik terarah dari pakar Digital Sinergi</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+          <h2 class="text-xs font-black tracking-widest text-[#4285F4] uppercase bg-blue-50 inline-block px-3.5 py-1.5 rounded-full border border-blue-100">
+            Bukti Kinerja Jasa Kami
+          </h2>
+          <h3 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-slate-900 leading-tight">
+            Kisah Sukses Klien Kami Setelah Optimasi Google Maps SEO
+          </h3>
+          <p class="text-sm text-slate-500 max-w-2xl mx-auto">
+            Ratusan lokasi bisnis dari Sabang sampai Merauke telah mempercayakan pengelolaan local SEO mereka bersama tim kami.
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+          <button onclick="filterPortfolio('all')" id="tab-all" class="portfolio-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer bg-blue-600 text-white shadow-md">
+            Semua Kategori
+          </button>
+          <button onclick="filterPortfolio('kesehatan')" id="tab-kesehatan" class="portfolio-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer bg-white border border-slate-200 text-slate-600 hover:bg-gray-50">
+            Kesehatan & Klinik
+          </button>
+          <button onclick="filterPortfolio('kuliner')" id="tab-kuliner" class="portfolio-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer bg-white border border-slate-200 text-slate-600 hover:bg-gray-50">
+            Restoran & Cafe
+          </button>
+          <button onclick="filterPortfolio('jasa')" id="tab-jasa" class="portfolio-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer bg-white border border-slate-200 text-slate-600 hover:bg-gray-50">
+            Layanan & Jasa
+          </button>
+        </div>
+
+        <!-- Portfolio Cards Grid -->
+        <div id="portfolio-container" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto text-left">
+          
+          <!-- Card 1 (Kesehatan) -->
+          <div data-category="kesehatan" class="portfolio-card bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition-all duration-300">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+                <div>
+                  <span class="text-[10px] font-black uppercase text-blue-600 tracking-wider">Studi Kasus • Kesehatan</span>
+                  <h4 class="text-lg font-extrabold text-slate-900 mt-1">Klinik Pratama Sehat Bersama (BPJS)</h4>
+                </div>
+                <div class="flex items-center gap-1 text-[11px] font-bold text-gray-500 bg-gray-50 px-2.5 py-1 rounded border border-gray-200">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-500"></i>
+                  <span>Bandung, Jawa Barat</span>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                Sebelum dioptimasi klinik ini tidak memiliki ulasan dan titik lokasinya tidak muncul di kata kunci darurat terdekat. Dalam 30 hari pertama, grafik ulasan melonjak tajam.
+              </p>
+              <div class="space-y-1.5">
+                <span class="text-[10px] uppercase font-black tracking-wider text-slate-400 block">Kata Kunci Utama yang Dimenangkan:</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-blue-50 text-[10px] font-bold text-blue-700 px-2 py-1 rounded border border-blue-100">🎯 Klinik BPJS Terdekat</span>
+                  <span class="bg-blue-50 text-[10px] font-bold text-blue-700 px-2 py-1 rounded border border-blue-100">🎯 Apotek 24 Jam Bandung</span>
+                </div>
+              </div>
+              <div class="bg-slate-50 rounded-2xl p-4 border border-slate-150 space-y-3">
+                <div class="grid grid-cols-2 gap-3 text-center">
+                  <div class="bg-white px-2 py-3 rounded-xl border border-gray-150">
+                    <span class="text-[10px] text-gray-400 block font-semibold uppercase leading-none mb-1">Maksimal Klik Peta</span>
+                    <span class="text-lg font-black text-emerald-600 font-mono">+280%</span>
+                  </div>
+                  <div class="bg-white px-2 py-3 rounded-xl border border-gray-150">
+                    <span class="text-[10px] text-gray-400 block font-semibold uppercase leading-none mb-1">Permintaan Rute</span>
+                    <span class="text-lg font-black text-emerald-600 font-mono">+180%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between bg-zinc-950 text-white rounded-xl py-3 px-4 font-mono text-[11px]">
+                <span class="text-slate-500">Sebelum: <span class="text-rose-500 font-bold">#19</span></span>
+                <div class="h-px w-10 bg-slate-800"></div>
+                <span class="text-emerald-400 font-extrabold flex items-center gap-1">
+                  <i data-lucide="trending-up" class="w-3.5 h-3.5 text-emerald-500 animate-pulse"></i>
+                  Sekarang: Peringkat #1 Maps
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 (Kuliner) -->
+          <div data-category="kuliner" class="portfolio-card bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition-all duration-300">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+                <div>
+                  <span class="text-[10px] font-black uppercase text-blue-600 tracking-wider">Studi Kasus • Kuliner</span>
+                  <h4 class="text-lg font-extrabold text-slate-900 mt-1">Sate Pedas & Gulai Pak Jono</h4>
+                </div>
+                <div class="flex items-center gap-1 text-[11px] font-bold text-gray-500 bg-gray-50 px-2.5 py-1 rounded border border-gray-200">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-500"></i>
+                  <span>Jakarta Barat, DKI Jakarta</span>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                Kami menyisipkan kategori optimal kuliner daging, geotagging presisi pada 30+ foto sate, dan menyusun tanya jawab seputar parkir luas bus & mobil.
+              </p>
+              <div class="space-y-1.5">
+                <span class="text-[10px] uppercase font-black tracking-wider text-slate-400 block">Kata Kunci Utama yang Dimenangkan:</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-blue-50 text-[10px] font-bold text-blue-700 px-2 py-1 rounded border border-blue-100">🎯 Sate Enak Jakarta Barat</span>
+                  <span class="bg-blue-50 text-[10px] font-bold text-blue-700 px-2 py-1 rounded border border-blue-100">🎯 Kuliner Malam Terdekat</span>
+                </div>
+              </div>
+              <div class="bg-slate-50 rounded-2xl p-4 border border-slate-150 space-y-3">
+                <div class="grid grid-cols-2 gap-3 text-center">
+                  <div class="bg-white px-2 py-3 rounded-xl border border-gray-150">
+                    <span class="text-[10px] text-gray-400 block font-semibold uppercase leading-none mb-1">Maksimal Klik Peta</span>
+                    <span class="text-lg font-black text-emerald-600 font-mono">+410%</span>
+                  </div>
+                  <div class="bg-white px-2 py-3 rounded-xl border border-gray-150">
+                    <span class="text-[10px] text-gray-400 block font-semibold uppercase leading-none mb-1">Permintaan Rute</span>
+                    <span class="text-lg font-black text-emerald-600 font-mono">+230%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between bg-zinc-950 text-white rounded-xl py-3 px-4 font-mono text-[11px]">
+                <span class="text-slate-500">Sebelum: <span class="text-rose-500 font-bold">#27</span></span>
+                <div class="h-px w-10 bg-slate-800"></div>
+                <span class="text-emerald-400 font-extrabold flex items-center gap-1">
+                  <i data-lucide="trending-up" class="w-3.5 h-3.5 text-emerald-500 animate-pulse"></i>
+                  Sekarang: Peringkat #2 Maps
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 (Jasa) -->
+          <div data-category="jasa" class="portfolio-card bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition-all duration-300">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+                <div>
+                  <span class="text-[10px] font-black uppercase text-blue-600 tracking-wider">Studi Kasus • Jasa & Servis</span>
+                  <h4 class="text-lg font-extrabold text-slate-900 mt-1">Glow Salon & SPA Wanita</h4>
+                </div>
+                <div class="flex items-center gap-1 text-[11px] font-bold text-gray-500 bg-gray-50 px-2.5 py-1 rounded border border-gray-200">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-500"></i>
+                  <span>Surabaya, Jawa Timur</span>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                Menyunting penyesuaian penulisan nama komersial tanpa menyalahi regulasi dan menempelkan link WA pemesanan online langsung di tampilan depan rute peta.
+              </p>
+              <div class="space-y-1.5">
+                <span class="text-[10px] uppercase font-black tracking-wider text-slate-400 block">Kata Kunci Utama yang Dimenangkan:</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-blue-50 text-[10px] font-bold text-blue-700 px-2 py-1 rounded border border-blue-100">🎯 Salon Rambut Surabaya</span>
+                  <span class="bg-blue-50 text-[10px] font-bold text-blue-700 px-2 py-1 rounded border border-blue-100">🎯 Potong Rambut Terdekat</span>
+                </div>
+              </div>
+              <div class="bg-slate-50 rounded-2xl p-4 border border-slate-150 space-y-3">
+                <div class="grid grid-cols-2 gap-3 text-center">
+                  <div class="bg-white px-2 py-3 rounded-xl border border-gray-150">
+                    <span class="text-[10px] text-gray-400 block font-semibold uppercase leading-none mb-1">Maksimal Klik Peta</span>
+                    <span class="text-lg font-black text-emerald-600 font-mono">+195%</span>
+                  </div>
+                  <div class="bg-white px-2 py-3 rounded-xl border border-gray-150">
+                    <span class="text-[10px] text-gray-400 block font-semibold uppercase leading-none mb-1">Permintaan Rute</span>
+                    <span class="text-lg font-black text-emerald-600 font-mono">+140%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between bg-zinc-950 text-white rounded-xl py-3 px-4 font-mono text-[11px]">
+                <span class="text-slate-500">Sebelum: <span class="text-rose-500 font-bold">#14</span></span>
+                <div class="h-px w-10 bg-slate-800"></div>
+                <span class="text-emerald-400 font-extrabold flex items-center gap-1">
+                  <i data-lucide="trending-up" class="w-3.5 h-3.5 text-emerald-500 animate-pulse"></i>
+                  Sekarang: Peringkat #1 Maps
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 (Jasa) -->
+          <div data-category="jasa" class="portfolio-card bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition-all duration-300">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+                <div>
+                  <span class="text-[10px] font-black uppercase text-blue-600 tracking-wider">Studi Kasus • Jasa & Servis</span>
+                  <h4 class="text-lg font-extrabold text-slate-900 mt-1">Transmisi Mobil Specialist Jaya</h4>
+                </div>
+                <div class="flex items-center gap-1 text-[11px] font-bold text-gray-500 bg-gray-50 px-2.5 py-1 rounded border border-gray-200">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-500"></i>
+                  <span>Tangerang, Banten</span>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                Persaingan ekstra intensif diatasi dengan penambahan katalog kelengkapan jasa matic, tautan lokasi luas, dan setup auto-posting promosi berkala.
+              </p>
+              <div class="space-y-1.5">
+                <span class="text-[10px] uppercase font-black tracking-wider text-slate-400 block">Kata Kunci Utama yang Dimenangkan:</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-blue-50 text-[10px] font-bold text-blue-700 px-2 py-1 rounded border border-blue-100">🎯 Bengkel Specialist Matic</span>
+                  <span class="bg-blue-50 text-[10px] font-bold text-blue-700 px-2 py-1 rounded border border-blue-100">🎯 Ganti Oli Transmisi terdekat</span>
+                </div>
+              </div>
+              <div class="bg-slate-50 rounded-2xl p-4 border border-slate-150 space-y-3">
+                <div class="grid grid-cols-2 gap-3 text-center">
+                  <div class="bg-white px-2 py-3 rounded-xl border border-gray-150">
+                    <span class="text-[10px] text-gray-400 block font-semibold uppercase leading-none mb-1">Maksimal Klik Peta</span>
+                    <span class="text-lg font-black text-emerald-600 font-mono">+340%</span>
+                  </div>
+                  <div class="bg-white px-2 py-3 rounded-xl border border-gray-150">
+                    <span class="text-[10px] text-gray-400 block font-semibold uppercase leading-none mb-1">Permintaan Rute</span>
+                    <span class="text-lg font-black text-emerald-600 font-mono">+290%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between bg-zinc-950 text-white rounded-xl py-3 px-4 font-mono text-[11px]">
+                <span class="text-slate-500">Sebelum: <span class="text-rose-500 font-bold">#32</span></span>
+                <div class="h-px w-10 bg-slate-800"></div>
+                <span class="text-emerald-400 font-extrabold flex items-center gap-1">
+                  <i data-lucide="trending-up" class="w-3.5 h-3.5 text-emerald-500 animate-pulse"></i>
+                  Sekarang: Peringkat #1 Maps
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner target CTA success -->
+        <div class="mt-16 bg-blue-600 rounded-3xl p-6 sm:p-10 text-white relative overflow-hidden flex flex-col md:flex-row items-center justify-between text-left gap-6 shadow-xl">
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-700 opacity-60 pointer-events-none"></div>
+          <div class="space-y-2 relative z-10 max-w-2xl">
+            <h4 class="text-lg sm:text-xl font-extrabold font-sans">Mau Bisnis Anda Muncul di Peringkat #1 Google dan Mendatangkan Banyak Pelanggan?</h4>
+            <p class="text-xs sm:text-sm text-blue-100 leading-normal font-normal">
+              Konsultasikan sekarang secara cuma-cuma. Tim teknis SEO kami akan melakukan pengecekan performa visual menyeluruh di area sekitar bisnis Anda.
+            </p>
+          </div>
+          <a href="#contact" class="flex-shrink-0 bg-white hover:bg-gray-100 text-blue-700 font-extrabold text-xs px-6 py-3.5 rounded-xl uppercase tracking-wider shadow-lg transition-all relative z-10 text-center">
+            Dapatkan Audit Visibility Gratis 🎯
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-slate-50 relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-16 space-y-4">
+          <div class="inline-flex items-center gap-1.5 bg-blue-50 text-blue-600 font-bold text-xs px-3.5 py-1.5 rounded-full border border-blue-100 uppercase tracking-widest">
+            <i data-lucide="help-circle" class="w-4 h-4 text-blue-500"></i>
+            <span>Tanya Jawab Seputar GBP</span>
+          </div>
+          <h3 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-slate-900 leading-tight">
+            Pertanyaan yang Sering Diajukan (FAQ)
+          </h3>
+          <p class="text-sm text-slate-500 max-w-xl mx-auto">
+            Masih ragu mengenai Jasa Optimasi Google Business Profile (GBP) kami? Temukan jawaban lengkap seputar teknis kerja di bawah ini.
+          </p>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="space-y-4 text-left">
+          
+          <!-- Accordion item 1 -->
+          <div class="faq-accordion border rounded-2xl bg-white border-slate-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion(0)" class="w-full flex justify-between items-center px-6 py-5 cursor-pointer select-none text-slate-900 focus:outline-none">
+              <span class="text-sm sm:text-base font-extrabold leading-tight">Apa itu Jasa Optimasi Google Business Profile (GBP) oleh Digital Sinergi?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 text-gray-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content transition-all max-h-0 overflow-hidden duration-300">
+              <div class="p-6 text-xs sm:text-sm text-slate-500 leading-relaxed border-t border-slate-100">
+                Ini adalah layanan terpadu untuk merombak, melengkapi, menyisipkan metadata SEO, mendaftarkan data, mengunggah media ter-geotagging, dan menyelidiki relevansi ulasan dari profil Maps bisnis Anda sehingga Google mengangkat posisi usaha Anda masuk halaman pencarian teratas (Local 3-Pack).
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion item 2 -->
+          <div class="faq-accordion border rounded-2xl bg-white border-slate-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center px-6 py-5 cursor-pointer select-none text-slate-900 focus:outline-none">
+              <span class="text-sm sm:text-base font-extrabold leading-tight">Apakah pengerjaan optimasi ini aman dan sesuai aturan Google?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 text-gray-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content transition-all max-h-0 overflow-hidden duration-300">
+              <div class="p-6 text-xs sm:text-sm text-slate-500 leading-relaxed border-t border-slate-100">
+                Ya, 100% aman. Digital Sinergi sepenuhnya bersandar pada pedoman teknis White-Hat SEO murni sesuai regulasi Google Business Profile Guidelines. Kami menghindari taktik manipulatif spam atau review hantu palsu yang mengundang risiko penangguhan ulasan atau penutupan paksa akun oleh robot Google.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion item 3 -->
+          <div class="faq-accordion border rounded-2xl bg-white border-slate-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center px-6 py-5 cursor-pointer select-none text-slate-900 focus:outline-none">
+              <span class="text-sm sm:text-base font-extrabold leading-tight">Bagaimana jika titik usaha saya belum ber-verifikasi atau terkena suspend?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 text-gray-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content transition-all max-h-0 overflow-hidden duration-300">
+              <div class="p-6 text-xs sm:text-sm text-slate-500 leading-relaxed border-t border-slate-100">
+                Tentu bisa kami bantu! Kami mempunyai tim fasilitator berpengalaman dalam mengurus pendaftaran surat pos Google PIN, koordinasi verifikasi video langsung, verifikasi email, hingga analisis letak pelanggaran akun ter-suspend untuk mengajukan reinstatemen pemulihan resmi kembali ke Google Support.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion item 4 -->
+          <div class="faq-accordion border rounded-2xl bg-white border-slate-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center px-6 py-5 cursor-pointer select-none text-slate-900 focus:outline-none">
+              <span class="text-sm sm:text-base font-extrabold leading-tight">Berapa lama waktu yang dibutuhkan sampai posisi ranking naik?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 text-gray-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content transition-all max-h-0 overflow-hidden duration-300">
+              <div class="p-6 text-xs sm:text-sm text-slate-500 leading-relaxed border-t border-slate-100">
+                Semua pengisian data dasar, geotagging foto, dan riset kata kunci diselesaikan dalam waktu 3 hingga 5 hari kerja di awal. Perkembangan grafik kenaikan impression pencarian, permintaan rute, hingga panggilan telepon biasanya mulai terlihat signifikan pada dashboard GBP Insights Anda dalam kurun waktu 1 hingga 3 bulan pertama, bervariasi tergantung persaingan niche lokal di kota Anda.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion item 5 -->
+          <div class="faq-accordion border rounded-2xl bg-white border-slate-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center px-6 py-5 cursor-pointer select-none text-slate-900 focus:outline-none">
+              <span class="text-sm sm:text-base font-extrabold leading-tight">Apakah ada jaminan atau Garansi Uang Kembali?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-4 text-gray-400 transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content transition-all max-h-0 overflow-hidden duration-300">
+              <div class="p-6 text-xs sm:text-sm text-slate-500 leading-relaxed border-t border-slate-100">
+                Kami memberikan Garansi Kenaikan Performa (Performance Growth Guarantee). Jika dalam kurun waktu 30 hari pertama kalender setelah proses optimasi keseluruhan berakhir tidak terlihat tanda-tanda kenaikan grafik pencapaian atau impresi di dasbor GBP Insights Anda, kami garansi pengembalian dana optimasi 100% utuh tanpa potongan sama sekali.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Custom WA contact bottom -->
+        <div class="mt-12 text-center bg-gray-50 p-6 rounded-2xl border border-gray-150 inline-block w-full">
+          <span class="text-xs text-slate-600 font-semibold inline-block sm:mr-2">
+            Punya pertanyaan khusus yang belum terjawab di atas?
+          </span>
+          <a href="https://api.whatsapp.com/send?phone=6285179662429&text=Halo%2520Digital%2520Sinergi,%2520saya%2520punya%2520pertanyaan%2520khusus%2520seputar%2520optimasi%2520GBP%2520yang%2520belum%2520tertera%252520di%2520FAQ.%2520Bisa%2520dibantu%253F" class="text-xs font-black text-blue-600 hover:text-blue-700 underline inline-block mt-2 sm:mt-0">
+            Hubungi Customer Care Kami Langsung via WA 💬
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-24 bg-white relative overflow-hidden border-t border-slate-100 text-center">
+      <!-- Background elements -->
+      <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none -translate-x-1/2 -translate-y-1/2 -z-10"></div>
+      
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Header -->
+        <div class="space-y-6 max-w-2xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-1.5 bg-blue-100 text-blue-700 font-bold text-xs px-3.5 py-1.5 rounded-full border border-blue-200 uppercase tracking-widest mx-auto">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>Konsultasi 100% Gratis</span>
+          </div>
+          <h2 class="text-3.5xl font-extrabold tracking-tight sm:text-4xl text-slate-900 leading-tight">
+            Hubungi Tim Ahli Kami Sekarang
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+            Ingin berkonsultasi mengenai meningkatkan jangkauan bisnis Anda di Google Maps? Hubungi kami langsung melalui WhatsApp untuk mendapatkan <span class="font-bold text-slate-900">Analisis Kesehatan SEO GBP Gratis (Senilai Rp 150.000)</span> langsung dari tim ahli lokal Digital Sinergi.
+          </p>
+        </div>
+
+        <!-- Big WhatsApp CTA -->
+        <div class="mb-14 max-w-md mx-auto">
+          <a href="https://api.whatsapp.com/send?phone=6285179662429&text=Halo%20Digital%20Sinergi,%20saya%20tertarik%20untuk%20melakukan%20konsultasi%20gratis%20mengenai%20Jasa%20Optimasi%20Google%20Business%20Profile%20saya.%20Mohon%20info%20lebih%20lanjut.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="w-full py-4.5 px-8 rounded-2xl bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-700 hover:to-green-600 text-white font-extrabold text-sm uppercase tracking-wider shadow-lg shadow-emerald-500/20 hover:scale-[1.01] active:scale-95 transition-all flex items-center justify-center gap-2.5">
+            <i data-lucide="message-square" class="w-5 h-5"></i>
+            <span>Hubungi via WhatsApp (Gratis Audit)</span>
+          </a>
+          <span class="text-[10px] text-gray-400 uppercase tracking-widest mt-2.5 block font-bold">
+            Respon Cepat Dalam 10-15 Menit Jam Kerja
+          </span>
+        </div>
+
+        <!-- Trust Avatars -->
+        <div class="mt-16 flex flex-col sm:flex-row items-center justify-center gap-3 border-t border-slate-200/50 pt-8">
+          <div class="flex -space-x-2">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&fit=crop&q=80" alt="Client avatar" class="w-8 h-8 rounded-full border-2 border-white object-cover" />
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&fit=crop&q=80" alt="Client avatar" class="w-8 h-8 rounded-full border-2 border-white object-cover" />
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&fit=crop&q=80" alt="Client avatar" class="w-8 h-8 rounded-full border-2 border-white object-cover" />
+          </div>
+          <p class="text-xs font-bold text-gray-500 max-w-sm">
+            Gabung bersama ratusan bisnis lokal lainnya yang telah mapan berkolaborasi bersama Digital Sinergi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900 relative">
+      <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+          
+          <!-- Column 1: Bio -->
+          <div class="md:col-span-5 space-y-4 text-left">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center font-extrabold text-white text-lg">
+                D
+              </div>
+              <div class="flex flex-col">
+                <span class="text-lg font-black text-white leading-none">DIGITAL SINERGI</span>
+                <span class="text-[9px] font-bold text-gray-500 uppercase tracking-widest">Digital Agency Partner</span>
+              </div>
+            </div>
+            <p class="text-xs leading-relaxed text-slate-500 max-w-md">
+              Digital Sinergi adalah penyedia jasa optimasi pemasaran digital terintegrasi di Indonesia. Kami mendukung serta membekali ribuan UMKM untuk merebut halaman utama Google SEO Maps lokal secara kredibel, aman, terstandardisasi, dan tepercaya.
+            </p>
+            <div class="flex items-center gap-1.5 text-xs text-slate-500 bg-slate-900/60 p-3 rounded-xl border border-slate-800/80 inline-block">
+              <i data-lucide="award" class="w-4 h-4 text-amber-500"></i>
+              <span>Standard Sertifikasi & Pedoman Google Partners.</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation -->
+          <div class="md:col-span-3 text-left space-y-4">
+            <h4 class="text-xs font-black uppercase tracking-widest text-white border-l-2 border-blue-500 pl-2.5">
+              Tautan Navigasi
+            </h4>
+            <ul class="space-y-2 text-xs">
+              <li><a href="#why-us" class="hover:text-white transition-colors">Tentang Jasa</a></li>
+              <li><a href="#services" class="hover:text-white transition-colors">Layanan Kami</a></li>
+              <li><a href="#portfolio" class="hover:text-white transition-colors flex items-center gap-1">Kisah Sukses Klien <span class="bg-blue-600 text-[8px] text-white px-1.5 py-0.2 rounded-full font-bold">New</span></a></li>
+              <li><a href="#visibility-audit" class="hover:text-white transition-colors">Cek Audit</a></li>
+              <li><a href="#faq" class="hover:text-white transition-colors">Pertanyaan (FAQ)</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contacts -->
+          <div class="md:col-span-4 text-left space-y-4">
+            <h4 class="text-xs font-black uppercase tracking-widest text-white border-l-2 border-blue-500 pl-2.5">
+              Hubungi Kami
+            </h4>
+            <ul class="space-y-2.5 text-xs text-slate-500">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="phone" class="w-4 h-4 text-blue-500 flex-shrink-0"></i>
+                <span class="text-slate-300 font-semibold">+62 851-7966-2429</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-900 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600">
+          <span>&copy; <span id="current-year">2026</span> Digital Sinergi. Seluruh Hak Cipta Dilindungi Undang-Undang.</span>
+          <span class="mt-2 sm:mt-0">Dibuat dengan cinta untuk pertumbuhan UMKM Nusantara 🇮🇩</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+      <!-- Back to top button -->
+      <button onclick="scrollToTop()" id="scroll-to-top" class="hidden w-11 h-11 rounded-full bg-white border border-gray-200 text-slate-700 hover:text-blue-600 shadow-md flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95" title="Kembali ke Atas">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Sticky WhatsApp button -->
+      <a href="https://api.whatsapp.com/send?phone=6285179662429&text=Halo%20Digital%20Sinergi,%20saya%20tertarik%20konsultasi%20mengenai%20Jasa%20Optimasi%20Google%20Business%20Profile.%20Bisa%20infokan%20jadwal%20atau%20kuota%20kosong%20hari%20ini%3F" target="_blank" rel="noopener noreferrer" class="w-13 h-13 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-lg shadow-emerald-500/20 flex items-center justify-center text-white cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95" title="Hubungi WhatsApp Admin">
+        <i data-lucide="message-square" class="w-6 h-6 fill-white text-emerald-500"></i>
+      </a>
+    </div>
+
+    <!-- Lucide Icon Renderer library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Functional Vanilla JavaScript logic -->
+    <script>
+      // Initialize lucide icons
+      lucide.createIcons();
+
+      // Current Year Dynamic Set
+      document.getElementById("current-year").innerText = new Date().getFullYear();
+
+      // Scrolling Header shadow behavior
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("navbar");
+        const scrollTopBtn = document.getElementById("scroll-to-top");
+
+        if (window.scrollY > 40) {
+          header.classList.remove("bg-transparent", "py-5");
+          header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-sm", "py-3", "border-b", "border-slate-100");
+        } else {
+          header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-sm", "py-3", "border-b", "border-slate-100");
+          header.classList.add("bg-transparent", "py-5");
+        }
+
+        // Floating Back-to-Top trigger
+        if (window.scrollY > 400) {
+          scrollTopBtn.classList.remove("hidden");
+        } else {
+          scrollTopBtn.classList.add("hidden");
+        }
+      });
+
+      // Quick Scroll to top function
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+
+      // Mobile drawer trigger
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const menuDrawer = document.getElementById("mobile-menu");
+      const openIcon = document.getElementById("menu-icon-open");
+      const closeIcon = document.getElementById("menu-icon-close");
+
+      menuBtn.addEventListener("click", () => {
+        const isHidden = menuDrawer.classList.contains("hidden");
+        if (isHidden) {
+          menuDrawer.classList.remove("hidden");
+          setTimeout(() => {
+            menuDrawer.style.maxHeight = "500px";
+          }, 10);
+          openIcon.classList.add("hidden");
+          closeIcon.classList.remove("hidden");
+        } else {
+          menuDrawer.style.maxHeight = "0";
+          setTimeout(() => {
+            menuDrawer.classList.add("hidden");
+          }, 300);
+          openIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        }
+      });
+
+      // Auto-close menu drawer when clicking anchors
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          menuDrawer.style.maxHeight = "0";
+          setTimeout(() => {
+            menuDrawer.classList.add("hidden");
+          }, 300);
+          openIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+
+      // Interactive Mock Phone view toggling
+      let currentMockState = "after";
+      function setToggleState(state) {
+        currentMockState = state;
+        const viewBefore = document.getElementById("phone-view-before");
+        const viewAfter = document.getElementById("phone-view-after");
+        const pinBefore = document.getElementById("map-pin-before");
+        const pinAfter = document.getElementById("map-pin-after");
+        
+        const btnBefore = document.getElementById("btn-toggle-before");
+        const btnAfter = document.getElementById("btn-toggle-after");
+
+        if (state === "before") {
+          viewBefore.classList.remove("hidden");
+          viewAfter.classList.add("hidden");
+          pinBefore.classList.remove("hidden");
+          pinAfter.classList.add("hidden");
+
+          btnBefore.className = "flex-1 py-1.5 px-3 rounded-full text-xs font-bold transition-all cursor-pointer bg-rose-500 text-white shadow-md shadow-rose-500/10";
+          btnAfter.className = "flex-1 py-1.5 px-3 rounded-full text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900";
+        } else {
+          viewBefore.classList.add("hidden");
+          viewAfter.classList.remove("hidden");
+          pinBefore.classList.add("hidden");
+          pinAfter.classList.remove("hidden");
+
+          btnBefore.className = "flex-1 py-1.5 px-3 rounded-full text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900";
+          btnAfter.className = "flex-1 py-1.5 px-3 rounded-full text-xs font-bold transition-all cursor-pointer bg-emerald-600 text-white shadow-md shadow-emerald-600/10";
+        }
+      }
+
+      // Keep cycling state every 6 seconds inside phone card to draw engagement
+      setInterval(() => {
+        const nextState = currentMockState === "after" ? "before" : "after";
+        setToggleState(nextState);
+      }, 6000);
+
+      // Portfolio categorization layout toggles
+      function filterPortfolio(category) {
+        // Handle tab visuals
+        document.querySelectorAll(".portfolio-tab").forEach(tab => {
+          tab.className = "portfolio-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer bg-white border border-slate-200 text-slate-600 hover:bg-gray-50";
+        });
+        const activeTab = document.getElementById(`tab-${category}`);
+        activeTab.className = "portfolio-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer bg-blue-600 text-white shadow-md";
+
+        // Handle cards matching
+        document.querySelectorAll(".portfolio-card").forEach(card => {
+          if (category === "all" || card.getAttribute("data-category") === category) {
+            card.classList.remove("hidden");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+      }
+
+      // Interlocking Accordion handling
+      let accordionIdx = 0;
+      function toggleAccordion(index) {
+        const accordions = document.querySelectorAll(".faq-accordion");
+        accordions.forEach((acc, i) => {
+          const content = acc.querySelector(".faq-content");
+          const icon = acc.querySelector(".faq-icon");
+          if (i === index) {
+            const isClosed = content.style.maxHeight === "0px" || !content.style.maxHeight;
+            if (isClosed) {
+              content.style.maxHeight = content.scrollHeight + "px";
+              icon.style.transform = "rotate(180deg)";
+              acc.classList.add("bg-slate-50", "border-blue-200", "shadow-sm");
+              acc.classList.remove("bg-white", "border-slate-200");
+            } else {
+              content.style.maxHeight = "0px";
+              icon.style.transform = "rotate(0deg)";
+              acc.classList.remove("bg-slate-50", "border-blue-200", "shadow-sm");
+              acc.classList.add("bg-white", "border-slate-200");
+            }
+          } else {
+            content.style.maxHeight = "0px";
+            icon.style.transform = "rotate(0deg)";
+            acc.classList.remove("bg-slate-50", "border-blue-200", "shadow-sm");
+            acc.classList.add("bg-white", "border-slate-200");
+          }
+        });
+      }
+      // Open the very first FAQ on page load
+      toggleAccordion(0);
+    </script>
+  </body>
+</html>
